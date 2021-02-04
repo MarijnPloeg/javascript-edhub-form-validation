@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Form validation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script src="main.js"></script>
+    <form action="action_page.php" method="post">
+        <div class="container">
+            <h1>Registreren</h1>
+            <label for="uname"><b>Gebruikersnaam:</b></label>
+            <input type="text" placeholder="Enter username:" name="uname" required>
+            <p id="uname"></p>
 
+            <label for="psw"><b>Wachtwoord</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <p id="psw"></p>
+        </div>
+    </form>
 </body>
 </html>
